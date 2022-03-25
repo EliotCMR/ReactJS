@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Headerperso from './components/navbar/headerperso'
+import Footerperso from './components/footer/footerperso'
+import React from 'react'
+/* import { ColorPickerMenu } from 'color-picker-menu' */
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+/* const Component = () => {
+  return <ColorPickerMenu />
+} */
+  function App() {
+    return (
+      <div className="App">
+        <Headerperso />
+        <header className="App-header">
 
-export default App;
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+        </header>
+        <Footerperso />
+      </div>
+    );
+  }
+
+export default App
